@@ -45,9 +45,14 @@ RanButton1.onclick = function(){
         ResultElement2.textContent="C:N ratio is normal";
     }
 
-    else {
-        ResultElement2.textContent="C:N ratio is abnormal";
+    else if(Cn > 30) {
+        ResultElement2.textContent="C:N ratio is too high";
     
+    }
+
+    else{
+         ResultElement2.textContent="C:N ratio is too low";
+
     }
 
     if(tem<= 71 && tem >= 49){
